@@ -81,3 +81,14 @@ WORKDIR /path/to/workdir
 # e.g.
 WORKDIR /app
 ```
+
+#### ENV
+Sets the environment variable <key> to the value <value>
+```Dockerfile
+# syntax
+ENV MY_NAME="John Doe"
+ENV MY_DOG=Rex\ The\ Dog
+ENV MY_CAT=fluffy
+# e.g.
+# ommiting = is possible
+ENV HOST 0.0.0.0 
