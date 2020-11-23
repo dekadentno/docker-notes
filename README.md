@@ -62,3 +62,13 @@ CMD command param1 param2
 # e.g.
 CMD echo "This is a test." | wc -
 ```
+
+#### COPY
+Copies new files or directories to container.
+```Dockerfile
+# syntax
+COPY [--chown=<user>:<group>] <src>... <dest>
+COPY [--chown=<user>:<group>] ["<src>",... "<dest>"]
+# e.g.
+COPY test.txt relativeDir/
+```
