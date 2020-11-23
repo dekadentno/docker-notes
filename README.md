@@ -40,3 +40,14 @@ LABEL version="1.0"
 LABEL description="bla bla bla"
 ```
 
+#### RUN
+Execute a command in a shell or exec form
+```Dockerfile
+# syntax
+RUN <command> 
+or
+RUN ["executable", "param1", "param2"]
+# e.g.
+RUN chmod 644 bla.txt
+RUN rm -f .npmrc
+```
