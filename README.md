@@ -51,3 +51,14 @@ RUN ["executable", "param1", "param2"]
 RUN chmod 644 bla.txt
 RUN rm -f .npmrc
 ```
+
+#### CMD
+Run something in the command line. DockerFile allows usage of the CMD instruction only once.
+```Dockerfile
+# syntax
+CMD ["executable","param1","param2"]
+CMD ["param1","param2"]
+CMD command param1 param2
+# e.g.
+CMD echo "This is a test." | wc -
+```
