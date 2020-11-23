@@ -100,3 +100,14 @@ Informs Docker that the container listens on the specified network ports at runt
 EXPOSE <port> [<port>/<protocol>...]
 # e.g.
 EXPOSE 3000/tcp
+```
+
+#### USER
+Sets the user name for following RUN / CMD / ENTRYPOINT commands.
+```Dockerfile
+# syntax
+USER <user>[:<group>]
+# e.g.
+USER patrick
+USER 1001
+```
