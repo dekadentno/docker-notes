@@ -92,3 +92,11 @@ ENV MY_CAT=fluffy
 # e.g.
 # ommiting = is possible
 ENV HOST 0.0.0.0 
+
+#### EXPOSE
+Informs Docker that the container listens on the specified network ports at runtime. NOTE: does not actually make ports accessible.
+```Dockerfile
+# syntax
+EXPOSE <port> [<port>/<protocol>...]
+# e.g.
+EXPOSE 3000/tcp
