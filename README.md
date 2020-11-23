@@ -29,3 +29,14 @@ FROM [--platform=<platform>] <image> [AS <name>]
 # e.g.
 FROM node:12 as build
 ```
+
+#### LABEL
+Sets the Author field of the generated images - name and email or other data
+```Dockerfile
+# syntax
+LABEL <key>=<value> <key>=<value> <key>=<value> ...
+# e.g.
+LABEL version="1.0"
+LABEL description="bla bla bla"
+```
+
