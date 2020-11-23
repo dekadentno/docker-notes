@@ -111,3 +111,13 @@ USER <user>[:<group>]
 USER patrick
 USER 1001
 ```
+
+#### ENTRYPOINT
+Configure a container to run as an executable, which means a specific application can be set as default and run every time a container is created using the image. This also means that the image will be used only to run and target the specific application each time it is called.
+```Dockerfile
+# syntax
+ENTRYPOINT ["executable", "param1", "param2"]
+ENTRYPOINT command param1 param2
+# e.g.
+ENTRYPOINT ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
+```
