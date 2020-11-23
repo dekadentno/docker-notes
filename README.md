@@ -1,6 +1,11 @@
 # Docker Notes
 :whale: My notes created while learning Docker
 
+References:
+1. https://docs.docker.com/engine/reference/builder/
+2. https://rock-it.pl/how-to-write-excellent-dockerfiles/
+3. https://github.com/wsargent/docker-cheat-sheet
+
 ## What is Docker?
 "With Docker, developers can build any app in any language using any toolchain. “Dockerized” apps are completely portable and can run anywhere - colleagues’ OS X and Windows laptops, QA servers running Ubuntu in the cloud, and production data center VMs running Red Hat."
 
