@@ -72,3 +72,12 @@ COPY [--chown=<user>:<group>] ["<src>",... "<dest>"]
 # e.g.
 COPY test.txt relativeDir/
 ```
+
+#### WORKDIR
+Sets the working directory.
+```Dockerfile
+# syntax
+WORKDIR /path/to/workdir
+# e.g.
+WORKDIR /app
+```
